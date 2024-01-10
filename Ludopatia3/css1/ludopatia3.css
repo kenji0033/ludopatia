@@ -1,0 +1,265 @@
+@font-face { /* Fuente de texto del juego en el que está basada la página*/
+  font-family: "csgo";
+  src: url("../fuente1/csgo.ttf");
+}
+.titulo{ 
+  position: absolute;
+  transform: translate(-50%, -50%); /* Estas 3 opciones son utilizadas para poder poner el título en forma de degradado, que empieza en blanco y acaba en rojo.*/
+  background: linear-gradient(to right, white, red);
+  -webkit-background-clip: text;
+  color: transparent;
+  top: 10vh;
+  left: 50%;
+  padding-top: 1vh;
+  z-index: 2;
+  font-family: "csgo"; /* Fuente de texto del juego en el que está basada la página*/
+  font-size: 50px;
+  padding-right: 50px;
+  margin:0;
+}
+
+body{
+  background-image: url("https://cdn.wallpapersafari.com/65/23/zdtjr0.jpg"); /* URL de la imagen utilizada de fondo en la página*/
+  background-size: cover;
+  display: flex; /* Display en modo flex para poder distribuir el espacio entre los hijos de una manera eficiente*/
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family:"csgo"; /* Fuente de texto del juego en el que está basada la página*/
+}
+
+/* Opciones para cambiar el estilo y la forma en la que están colocadas las cajas en la página, de manera que haya dos filas de cinco cajas cada una, y alineadas en el centro.*/
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/*Aqui están todas las cajas ajustadas, colocadas, y con sus respectivos hovers para que al pasar el ratón por encima cambie el cursor y más.*/
+#primer {
+  cursor: pointer;
+  width: 160px;
+  height: auto;
+  padding-right:100px;
+  margin: 0px;
+  flex: 1;
+  max-width: 100%;
+}
+
+#primer:hover {
+  transform: scale(1.2);
+  filter: brightness(1.6);
+}
+
+#segun {
+  cursor: pointer;
+  width: 160px;
+  height: auto;
+  padding-right:100px;
+  margin: 0px;
+  flex: 1;
+  max-width: 100%;	
+}
+
+#segun:hover {
+  transform: scale(1.2);
+  filter: brightness(1.6);
+}
+
+#tercer {
+  margin-top:500px;
+  cursor: pointer;
+  width: 160px;
+  height: auto;
+  padding-right:100px;
+  flex: 1;
+  margin: 0px;
+  max-width: 100%;
+}
+#tercer:hover {
+  transform: scale(1.2);
+  filter: brightness(1.6);
+}
+#cuarti{
+  cursor: pointer;
+  width: 160px;
+  height: auto;
+  padding-right:100px;
+  flex: 1;
+  margin: 0px;
+  max-width: 100%;
+}
+#cuarti:hover {
+  transform: scale(1.2);
+  filter: brightness(1.6);
+}
+
+#quinti{
+  cursor: pointer;
+  width: 160px;
+  height: auto;
+  padding-right:100px;
+  flex: 1;
+  margin: 0px;
+  max-width: 100%;
+}
+#quinti:hover {
+  transform: scale(1.2);
+  filter: brightness(1.6);
+}
+#sexti{
+  cursor: pointer;
+  width: 160px;
+  height: auto;
+  padding-right:100px;
+  flex: 1;
+  margin: 0px;
+  max-width: 100%;
+}
+#sexti:hover {
+  transform: scale(1.2);
+  filter: brightness(1.6);
+}
+#siete{
+  cursor: pointer;
+  width: 160px;
+  height: auto;
+  padding-right:100px;
+  flex: 1;
+  margin: 0px;
+  max-width: 100%;
+}
+#siete:hover {
+  transform: scale(1.2);
+  filter: brightness(1.6);
+}
+#ochi{
+  cursor: pointer;
+  width: 160px;
+  height: auto;
+  padding-right:100px;
+  flex: 1;
+  margin: 0px;
+  max-width: 100%;
+}
+#ochi:hover {
+  transform: scale(1.2);
+  filter: brightness(1.6);
+}
+#nuevi{
+  cursor: pointer;
+  width: 160px;
+  height: auto;
+  padding-right:100px;
+  flex: 1;
+  margin: 0px;
+  max-width: 100%;
+}
+#nuevi:hover {
+  transform:scale(1.2);
+  filter: brightness(1.6);
+}
+#dieci{
+  cursor: pointer;
+  width: 160px;
+  padding-right:100px;
+  flex: 1;
+  margin: 0px;
+  max-width: 100%;
+}
+#dieci:hover {
+  transform: scale(1.2);
+  filter: brightness(1.6);
+}
+/* Esta hace que los botones no se vean antes de que el usuario haga click en una de las cajas.*/
+.box {
+  display: none;
+}
+
+.content {
+  margin-top: 20px;
+}
+
+button {
+  cursor: pointer;
+  margin-bottom: 1vh;
+}
+
+#openButton { /* Las opciones, medidas y estilos del botón de abrir una caja.*/
+  font-family:"csgo";
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 1vh;
+}
+
+#backToMenu { /* Las opciones, medidas y estilos del botón para poder volver al menú de elección de caja*/
+  font-family:"csgo";
+  background-color: green;
+  color: white;
+  padding: 15px 30px;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 1vh;
+}
+
+#logo { /* Las medidas del logo que aparece abajo que se moverá a medida que vayan mostrandose los objetos dentro de una caja*/
+  width: 100px;
+  height: 150px;
+  padding-top:370px;
+  padding-left: 100px;
+  margin:0px;
+}
+
+.item-image {
+  width: 150px;
+  height: 150px;
+}
+
+.content img {
+  width: 150px;
+  height: auto;
+}
+
+@keyframes slideShow { /* La velocidad y dirección de la animación (slide) que irá mostrando las armas que hay dentro de una caja*/
+  0% {
+    transform: translateX(60%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.slideshow-container{ 
+  overflow: hidden;
+  width: 100%;
+  height: 200px;
+  padding-top:100px;
+}
+
+.slideshow-images{ /* Las medidas y más de las imagenes de las armas dentro de la caja.*/
+  display: flex;
+  animation: none;
+   padding-top:100px;
+}
+
+.slide{ /* Más opciones del slide, sus medidas, margenes etc.*/
+  width: 100%;
+  height: 100%;
+  margin-right: 20px;
+  padding-top:100px;
+}
+
+.animate-slideshow { /* La velocidad a la que irá la animación del slide.*/
+  animation: slideShow 3s linear;
+  padding-top:100px;
+}
