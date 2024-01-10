@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Encuesta de satisfacción</title>
+		<link href="css/index.css" rel="stylesheet" type="text/css">			<!-- Uso el mismo archivo .css para tenerlo todo más controlado -->
+		<script defer src="js/encuesta.js" type="text/javascript"></script>
+	</head>
+	<body onload="funcion()">
+		<b><header class="a" id="h2"><b>ENCUESTA DE SATISFACCIÓN</header>
+			<form id="encuesta">
+			<img class="monedaencuesta" src="media/moneda.gif"><img class="monedaencuesta2" src="media/moneda.gif">
+				<section class="pregunta">¿Te consideras adicto/a al juego después de probar Ludopatía™?</section>
+				<section class="respuesta" id="r1">
+					<input type="radio" name="respuesta1" id="si" onclick="sonidoClic()">Sí
+					<input type="radio" name="respuesta1" id="no" class="xd" onclick="sonidoClic()">No
+				</section>
+				<img class="monedaencuesta" src="media/moneda.gif"><img class="monedaencuesta2" src="media/moneda.gif">
+				<section class="pregunta">Del 0 al 10, ¿recomendarías Ludopatía™ a algún amigo/a?</section>
+				<section class="respuesta" id="r2" onclick="sonidoClic()">
+					<select id="select">
+						<option value="0">0 - Jamás de los jamases
+						<option value="1">1 - Ni de broma
+						<option value="2">2 - No
+						<option value="3">3 - Meh
+						<option value="4">4 - Quizá
+						<option value="5">5 - Puede
+						<option value="6">6 - Es posible
+						<option value="7">7 - Lo pensaré
+						<option value="8">8 - Sí
+						<option value="9">9 - A tope
+						<option value="10">10 - Sin pensarlo 2 veces
+					</select>
+				</section>
+				<img class="monedaencuesta" src="media/moneda.gif"><img class="monedaencuesta2" src="media/moneda.gif">
+				<section class="pregunta">¿Quién dirías que merece aprobar el proyecto?
+				</section>
+				<section class="respuesta" id="r3">
+					<input type="checkbox" name="respuesta3" id="ruben" checked="true" onclick="sonidoClic()">Rubén
+					<input type="checkbox" name="respuesta3" id="mario" checked="true" class="xd" onclick="sonidoClic()">Mario
+					<input type="checkbox" name="respuesta3" id="mario" checked="true" class="xd" onclick="sonidoClic()">Eduardo
+					<input type="checkbox" name="respuesta3" id="mario" checked="true" class="xd" onclick="sonidoClic()">Iván
+					<input type="checkbox" name="respuesta3" id="mario" checked="true" class="xd" onclick="sonidoClic()">Nacho
+					<input type="checkbox" name="respuesta3" id="mario" checked="true" class="xd" onclick="sonidoClic()">Marco
+				</section>
+				<img class="monedaencuesta" src="media/moneda.gif"><img class="monedaencuesta2" src="media/moneda.gif">
+				<section class="pregunta">¿Alguna sugerencia para mejorar?</section>
+				<section class="respuesta" id="r4">
+					<textarea name="respuesta4" rows="3" cols="50" onclick="sonidoClic()"></textarea></section>
+				<img id="monedae1" src="media/moneda.gif"><img id="monedae2" src="media/moneda.gif">
+				<button class="enviar" name="enviar" onclick="encuestaEnviada()" onclick="sonidoClic()">ENVIAR</button>
+			</form>
+			<img id="monedae3" src="media/moneda.gif"><img id="monedae4" src="media/moneda.gif">
+			<button class="enviar" onclick="sonidoClic()"><a href="index.html">Volver al índice</a></button>		<!-- No se reproduce ningún sonido cuando el botón al que se le hace click contiene un link -->
+		</b>
+	</body>
+<html>
