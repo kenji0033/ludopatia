@@ -1,0 +1,65 @@
+.div1{
+  text-align: center;
+}
+
+#luchadortext{
+  border-radius: 25px;
+  background: red;
+  padding: 20px;
+  width: 200px;
+  height: 70px;
+  border: 10px solid #D2042D;
+  margin-left: auto;
+  margin-right: auto;
+  transition: transform .2s;
+  font-family:SuperWoobly;
+  color:white;
+  cursor: pointer;
+}
+
+#luchadortext:hover {
+  transform: scale(1.2);
+  background-color: #e40000;
+}
+
+@font-face{
+	font-family: "SuperWoobly";
+    src: url("titulo/SuperWoobly.ttf");
+}
+
+#titulo{
+	font-family:SuperWoobly;
+	font-size:80px;
+}
+
+#img1 {
+  border: 10px solid black;
+  border-radius: 25px;
+}
+
+body{
+	background-image: url("Imagenes/bg1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.div2{
+	display:flex;
+	flex-wrap:wrap;
+	align-content:space-between;
+	gap: 10px;
+	border-radius: 5px;
+}
+.img{
+  width: 120px;
+  height: 150px;
+  border-radius: 25px;
+  border: 5px solid black;
+  margin-left: 5px;
+  transition: transform .2s;
+}
+
+.img:hover {
+  transform: scale(1.2);
+}
+ 
