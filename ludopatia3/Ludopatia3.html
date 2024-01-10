@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>CSGO FREE BOXES</title>
+    <link rel="stylesheet" href="css1/ludopatia3.css">
+	<script type="text/javascript" src="js1/ludopatia.js" defer></script>
+</head>
+<body>
+    <h1 class="titulo">FREE BOXES CSGO</h1>
+	
+    <img src="img/logo.png" id="logo">
+       <div class="container">
+        <div class="menu-fila">
+            <img src="img/1.png" alt="Case 1" class="cases" id="primer" onclick="showCase('1')">
+            <img src="img/2.png" alt="Case 2" class="cases" id="segun" onclick="showCase('2')">
+            <img src="img/3.png" alt="Case 3" class="cases" id="tercer" onclick="showCase('3')">
+            <img src="img/4.png" alt="Case 4" class="cases" id="cuarti" onclick="showCase('4')">
+            <img src="img/5.png" alt="Case 5" class="cases" id="quinti" onclick="showCase('5')">
+        </div>
+        <div class="menu-fila">
+            <img src="img/6.png" alt="Case 6" class="cases" id="sexti" onclick="showCase('6')">
+            <img src="img/7.png" alt="Case 7" class="cases" id="siete" onclick="showCase('7')">
+            <img src="img/8.png" alt="Case 8" class="cases" id="ochi" onclick="showCase('8')">
+            <img src="img/9.png" alt="Case 9" class="cases" id="nuevi" onclick="showCase('9')">
+            <img src="img/10.png" alt="Case 10" class="cases" id="dieci" onclick="showCase('10')">
+        </div>
+        <div class="box" id="box">
+            <div class="content" id="content"></div>
+            <button id="openButton" onclick="openBox()" disabled>Abrir Caja</button>
+            <button id="backToMenu" onclick="backToMenu()">Volver</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+body{
+	background-image: url('../Imagenes/Fondo.jpeg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	font-family: Arial, sans-serif;
+	position: relative;
+}
+
+h1{
+	margin-top: 20px;
+}
+
+.TablaPuntuaciones{
+	position: fixed;
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+}
+
+#puntos{
+	font-size: 30px;
+	position: absolute;
+	bottom: 16em;
+}
+
+button{
+	position: absolute;
+	top: 40em;
+	left: 54em;
+	background-color: green;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	transition: transform 0.5s;
+}
+
+button:hover{
+	animation: zoomIn 0.5s forwards;
+}
+
+@keyframes zoomIn{
+	
+	from{
+		
+		transform: scale(1);
+	}
+
+	to{
+		transform: scale(1.2);
+	}
+}
+
+#caja{
+	display: flex;
+	gap: 10px;					/*Espacio entre imagenes*/
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}	
+
+#caja img{
+	max-width: 300px;
+	max-height: 200px;
+}
+
+#mensaje{
+	font-size: 60px;
+	position: absolute;
+	top: 30px;
+	left: 5px;
+}
+
+#premio{
+	width: 100%;
+	display: flex;
+	justify-content: center;	/*Centrar horizontalmente los elementos hijos*/
+	align-items: center;		/*Centrar verticalmente los elementos hijos*/
+	height: 80vh;
+}
+
+#premio img{
+	background-color: white;
+	max-width: 90px;
+	max-height: 45px;
+	position: absolute;
+}

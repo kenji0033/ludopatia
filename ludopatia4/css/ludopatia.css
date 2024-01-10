@@ -1,0 +1,95 @@
+@font-face{
+	font-family: "hollowfont";
+	src: url("../css/perpeta.ttf");
+	
+}
+
+#titulo{
+    margin-left: 28.5vw;
+    width: 700px;
+    height: auto;
+}
+body{
+	background-image: url("../media/fondo.png");
+	background-size: cover;
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+
+.mano-de-cartas {
+    padding-top: 1vh;
+    display: flex;
+    gap: 7px;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+	
+}
+
+.mano-de-cartas img {
+	padding-top: 1vh;
+    width: 300px; 
+    height: auto;
+  border-radius: 15px;
+  transform-origin: center bottom; 
+  transition: transform 0.3s; 
+	
+}
+
+.mano-de-cartas img:hover {
+    transform: translateY(-20px); 
+	transform: scale(1.2);
+	
+}
+.botonhollow {
+    text-align: center; 
+}
+
+.botonhollow img {
+    height: auto;
+    width: 150px;
+    transition: transform 0.3s;
+    margin-top:10px;
+}
+
+.botonhollow img:hover {
+    transform: scale(1.2);
+}
+
+.textoboton {
+    font-family: hollowfont;
+    color: aliceblue;
+    font-size: 25px;
+    display: block;
+    margin-top: 10px; 
+    text-decoration: underline;
+
+}
+
+h1{
+
+font-family: holl;
+
+}
+.coleccion {
+    padding-left: 7vh;
+    display: block;
+    gap: 7px;
+    align-items: center; 
+    justify-content: center; 
+	
+}
+.coleccion img {
+	
+    width: 300px; 
+    height: auto;
+  border-radius: 15px;
+  transform-origin: center bottom; 
+ 
+	
+}
+#colecciontitulo{
+    margin-left: 34.3vw;
+    width: 500px;
+    height: auto;
+}

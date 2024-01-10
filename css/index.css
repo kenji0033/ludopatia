@@ -1,0 +1,230 @@
+body {
+	background-color: black;
+	background-image: url(../media/a.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	text-align: center;
+	color: white;
+}
+
+header {
+	margin-left: 10vw;
+	margin-right: 10vw;
+	width: 80vw;
+	font-family: Impact;
+	background-color: #c00000;
+	margin-bottom: 1.5vh;
+	border: 2px solid #800000;
+}
+
+#h {
+	font-size: 10vw;
+}
+
+#h2 {
+	font-size: 4.5vw;
+}
+
+section {
+	display: flex;
+	margin: 1.5vh;
+	justify-content: space-around;
+}
+
+article {
+	padding-top: 23vh;
+	display: inline-block;
+	font-family: Calibri;
+	background-color: #a00000;
+	height: 27vh;
+	width: 15vw;
+	border: 2px solid #800000;
+	font-size: 3vh;
+	transition-property: background-color, transform;
+	transition-duration: 0.25s;
+}
+
+article:hover {
+	background-color: white;
+	transform: scale(1.1);
+	color: black;
+	border: 2px solid #a00000;
+	font-weight: bold;
+}
+
+#random {
+	background-color: #a00000;
+	transition-property: background-color, transform;
+	transition-duration: 0.25s;
+}
+
+#random:hover {			/* Es lo mismo, pero hay que ponerlo otra vez porque random es un section */
+	background-color: white;
+	transform: scale(1.1);
+	color: black;
+	border: 2px solid #a00000;
+	font-weight: bold;
+	transition: 0.2s ease-in;
+}
+
+footer {
+	margin-left: 40vw;				/* Alineo los elementos al centro */
+	background-color: black;
+	height: 4vh;
+	width: 20vw;
+	border: 2px solid #800000;
+	height: 2vh;
+	font-size: 1.5vh;
+}
+
+a {
+	font-weight: bold;
+	color: #00ffff;
+}
+
+a:active {
+	color: white;
+}
+
+.subpagina {
+	color: white;
+	text-decoration: none;
+}
+
+#0 {
+	margin-top: 1vh;
+}
+
+.rectangulo {
+	margin-left: 32.5vw;				/* Alineo los elementos al centro */
+	background-color: black;
+	height: 4vh;
+	width: 35vw;
+	border: 2px solid #800000;
+	font-size: 2.5vh;
+	padding-top: 1vh;
+}
+
+.largo {
+	width: 60vw;
+	margin-left: 20vw;
+}
+
+.corto {
+	width: 20vw;
+	margin-left: 39vw;
+}
+
+.pregunta {
+	display: inline-block;
+	height: 7vh;
+	width: 70vw;
+	border: 2px solid #800000;
+	background-color: black;
+	font-size: 4vh;
+	padding-bottom: -1vh;
+}
+
+.respuesta {
+	background-color: #c00000;
+	border: 2px solid #800000;
+	justify-content: center;
+	font-size: 3vh;
+}
+
+#r1 {
+	width: 20vw;
+	margin-left: 40vw;
+}
+
+#r2 {
+	width: 24vw;
+	margin-left: 38vw;
+}
+
+#r3 {
+	width: 66vw;
+	margin-left: 17vw;
+}
+
+#r4 {
+	font-size: 2vh;
+	width: 30vw;
+	margin-left: 35vw;
+}
+
+.xd {
+	margin-left: 5vw;
+}
+
+#select {
+	width: 15vw;
+	font-size: 2vh;
+}
+
+.enviar {
+	font-size: 3vh;
+	color: white;
+	background-color: black;
+	border: 2px solid #c00000;
+	font-family: Times;
+	font-weight: bold;
+	margin-bottom: 1vh;
+}
+
+img {
+	position: absolute;
+	height: 5vh;
+	display: inline;
+}
+
+#moneda1 {
+	left: 15vw;
+}
+
+#moneda2 {
+	left: 83vw;
+}
+
+#moneda3 {
+	left: 15vw;
+}
+
+#moneda4 {
+	left: 84vw;
+}
+
+#moneda5 {
+	left: 28vw;
+}
+
+#moneda6 {
+	left: 71vw;
+}
+
+.monedaencuesta {
+	left: 10vw;
+	margin-top: 2.5vh;
+}
+
+.monedaencuesta2 {
+	left: 87vw;
+	margin-top: 2.5vh;
+}
+
+#monedae1 {
+	left: 40vw;
+}
+
+#monedae2 {
+	left: 57vw;
+}
+
+#monedae3 {
+	left: 37vw;
+}
+
+#monedae4 {
+	left: 60vw;
+}
